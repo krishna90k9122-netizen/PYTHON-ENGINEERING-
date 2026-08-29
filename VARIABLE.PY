@@ -14,3 +14,5 @@ print(type(age))
 print(type(percentage))
 print(type(is_student))
 
+
+
