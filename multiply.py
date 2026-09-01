@@ -1,8 +1,6 @@
 def multiply(a, b):
 
-       
 
-    
     return a * b
 
 result = multiply(5,8)
@@ -24,5 +22,12 @@ def cheak(number):
         print("odd number")
         
 cheak(10)
+cheak(7) 
 
-cheak(7)  
+
+
+def students(name="krishna"):
+    print("hello "+  name)
+
+students()
+students("rahul")
