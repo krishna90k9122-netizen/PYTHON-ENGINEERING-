@@ -1,4 +1,4 @@
 krishan,develepor,50000
-rahul,data engineering,70000
+rahul,data engineering,60000
 Aman,tester,30000
-rohit,data engineering,60000
+rohit,data engineering,40000

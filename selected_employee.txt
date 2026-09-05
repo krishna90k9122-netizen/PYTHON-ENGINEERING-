@@ -1,2 +1,0 @@
-rahul,data engineering,70000
-rohit,data engineering,60000

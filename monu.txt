@@ -1,0 +1,4 @@
+krishan,develepor,50000
+rahul,data engineer,60000
+Aman,data engineer,30000
+rohit,data engineer,40000

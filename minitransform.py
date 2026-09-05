@@ -28,22 +28,46 @@ with open("tans.txt","r",encoding="utf-8") as file:
 #                 print("no file ")
 
 
-with open("employ.txt","r",encoding="utf-8") as input_file:
-     with open("selected_employee.txt","w",encoding="utf-8") as output_file:
+# with open("employ.txt","r",encoding="utf-8") as input_file:
+#      with open("selected_employee.txt","w",encoding="utf-8") as output_file:
 
-        for line in input_file:
+#         for line in input_file:
+   
+#          try:
+#             line=line.strip()
 
-            line=line.strip()
+#             name,domain,salary=line.split(",")
 
-            name,domain,salary=line.split(",")
+#             salary=int(salary)
+            
+#             if domain=="data engineering" and salary>=20000:
+#                     print("work done succesfully")
+#                     output_file.write(
 
-            salary=int(salary)
+#                         f"{name},{domain},{salary}\n"
+#                     )  
+                    
+#          except ValueError:
+#                 print("Invalid record:",line)    
 
-            try:
-                if domain=="data engineering" and salary>=20000:
-                    print("work done succesfully")
-                    output_file.write(
-                        f"{name},{domain},{salary}\n"
-                    )         
-            except FileNotFoundError:
-                print("not file avaialble")    
+
+with open("record.txt","r",encoding="utf-8") as input_file:
+    with open("bad_record.txt","w",encoding="utf-8") as error_file:
+
+     for line in input_file:
+
+        try:
+
+          line=line.strip()
+          name,role,salary=line.split(",")
+        #   salary=-5000
+        #   if salary<0:
+        #    raise ValueError("Salary cannot be nagative")
+          salary=int(salary)
+
+          print(name,role,salary)
+
+        except ValueError:
+          error_file.write(line+"\n")
+
+        
