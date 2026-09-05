@@ -26,3 +26,17 @@ result=[
 ]
 
 print(result)
+
+
+names=[
+    "krusha",
+    "rahul",
+    "priya",
+    "pooja",
+    "sneha"
+]
+clean_name=[
+    name.strip().title()
+    for name in names
+]
+print(clean_name)
