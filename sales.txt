@@ -1,0 +1,3 @@
+krishna,delhi,500
+kosidjik,goa,300
+buggu,gomoh,400
